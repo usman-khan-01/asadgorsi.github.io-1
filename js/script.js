@@ -1,9 +1,33 @@
-(function($) {
+(async () => {
+    const response = await fetch('https://graph.perspective-v.com/api/resume', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "*/*",
+        },
+        body: JSON.stringify({
+            query: `query getMyResume($token:String!){
+                getbyaccesstoken(accesToken:$token){
+                  name,
+                  jsonData
+                }
+              }`,
+            variables: {
+                token: '1pSkDoSIqUG/NRRMhsO+4Q=='
+            }
+        })
+    });
+    const body = await response.json();
+    var data = JSON.parse(body.data.getbyaccesstoken.jsonData);
+})();
+
+
+(function ($) {
     "use strict";
 
     // Windows load
 
-    $(window).on("load", function() {
+    $(window).on("load", function () {
 
         // Site loader 
 
@@ -55,17 +79,17 @@
         $(".hero.index").css('height', $(window).height());
     }
 
-    $(function() {
-            mainHeroResize()
-        }),
-        $(window).resize(function() {
+    $(function () {
+        mainHeroResize()
+    }),
+        $(window).resize(function () {
             mainHeroResize()
         });
 
 
     // Append images as css background
 
-    $('.background-img').each(function() {
+    $('.background-img').each(function () {
         var path = $(this).children('img').attr('src');
         $(this).css('background-image', 'url("' + path + '")').css('background-position', 'initial');
     });
@@ -99,7 +123,7 @@
 
     // Skills bar 
 
-    $(".percentage").each(function() {
+    $(".percentage").each(function () {
         var height = $(this).text();
         $(this).css("height", height);
 
@@ -122,7 +146,7 @@
     });
 
 
-    $('.filter').on("click", "li a", function() {
+    $('.filter').on("click", "li a", function () {
 
         $(this).addClass('active');
         $(this).parent().siblings().find('a').removeClass('active');
@@ -155,7 +179,7 @@
     var contactForm = $('.contact-form');
 
 
-    $('.submit').on("click", function() {
+    $('.submit').on("click", function () {
 
         inputName.removeClass("errorForm");
         textArea.removeClass("errorForm");
@@ -197,7 +221,7 @@
             url: contactForm.attr('action'),
             data: data_string,
 
-            success: function(message) {
+            success: function (message) {
                 if (message === 'SENDING') {
                     $('.success').fadeIn('slow');
                 } else {
@@ -215,26 +239,26 @@
     // Map Location
 
     var styles = [{
-            stylers: [{
-                    saturation: -100
-                }
+        stylers: [{
+            saturation: -100
+        }
 
-            ]
+        ]
+    }, {
+        featureType: 'road',
+        elementType: 'geometry',
+        stylers: [{
+            hue: "#74b7b0"
         }, {
-            featureType: 'road',
-            elementType: 'geometry',
-            stylers: [{
-                hue: "#74b7b0"
-            }, {
-                visibility: 'simplified'
-            }]
-        }, {
-            featureType: 'road',
-            elementType: 'labels',
-            stylers: [{
-                visibility: 'on'
-            }]
-        }],
+            visibility: 'simplified'
+        }]
+    }, {
+        featureType: 'road',
+        elementType: 'labels',
+        stylers: [{
+            visibility: 'on'
+        }]
+    }],
 
         lat = -33.867490,
         lng = 151.20699,

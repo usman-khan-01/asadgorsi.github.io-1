@@ -1,0 +1,197 @@
+{
+    "fullName": "Asad Khan",
+    "firstName": "Asad",
+    "lastName": "Khan",
+    "mobile": "+92 321 882 0567",
+    "profileImage":"img/profile.png",
+    "profession": "Graphic Designer",
+    "tagline": "A Talented Freelancer Located",
+    "about": "I've been working as an illustrator/graphics designer for the past 4 years. I have full command of Adobe Photoshop & Adobe Illustrator. I make lovely and as per your need illustrations, photo editing and other Photoshop work that help you and your entrepreneurial clients to attract the perfect audience. It will help to increase your business' conversion rate and to find an original voice to your words. I hope to get along with you.",
+    "basicInfo": {
+        "email": "asadgorsi76@gmail.com",
+        "address": "Lahore District, Punjab, Pakistan",
+        "languages": "Urdu, English"
+    },
+    "emplyment": [
+        {
+            "name": "WeCustomBoxes",
+            "as":"Graphics Designer",
+            "timePeriod":"Currently Working",
+            "shortDesc":"I started working as a Packaging Designer in WeCustomBoxes in April, 2021. I had a very great experience in this field."
+        },
+        {
+            "name": "Fiverr",
+            "as": "Graphics Designer",
+            "timePeriod": "Actively Working",
+            "shortDesc": "I am a level 1 seller on the Fiverr with more than 2+ years and i have 5 Star rating on fiverr."
+        },
+        {
+            "name": "Core Solution & Services",
+            "as": "Graphics Designer",
+            "timePeriod":"12-Apr - 15-Jun 2017",
+            "shortDesc":"I have completed my Internship from CoreSolution&Services. I was working there as a Website Designer.It was really nice experience working with them."
+        },
+        {
+            "name": "ArtBox by Naba",
+            "as": "Graphics Designer",
+            "timePeriod":"2017-2019",
+            "shortDesc":"I started working as a graphic designer at ArtBox by Naba in 2017. I was working there as a social media manager/designer."
+        }
+    ],
+    "education&certification": [
+        {
+            "institution": "Jannah Public School",
+            "degree": "School",
+            "timePeriod": "2007 - 2017",
+            "shortDesc": "I've completed my schooling from jannah Public School located in Gujrat."
+        },
+        {
+            "institution": "Brains Group of Collages",
+            "degree": "Graphic Design Course",
+            "timePeriod": "2017",
+            "shortDesc": "I have completed my Graphic Design Course from Brains Group of Collages. The duration of the course was 3 months with monthly Assignments for practice."
+        },
+        {
+            "institution": "Digiskills.pk",
+            "degree": "Graphic Design Course",
+            "timePeriod": "2019",
+            "shortDesc": "I have completed my Internship from CoreSolution&Services. I was working there as a Website Designer.It was really nice experience working with them."
+        },
+        {
+            "institution": "Linkedinlearning.com",
+            "degree": "Graphic Design Course",
+            "timePeriod": "2020",
+            "shortDesc": "I started working as a graphic designer at ArtBox by Naba in 2017. I was working there as a social media manager/designer."
+        }
+    ],
+    "skills":[
+        {
+            "name":"Photoshop",
+            "percentage":"100%"
+        },
+        {
+            "name":"Illustrator",
+            "percentage":"100%"
+        },
+        {
+            "name":"InDesign",
+            "percentage":"100%"
+        },
+        {
+            "name":"After Effects",
+            "percentage":"80%"
+        },
+        {
+            "name":"Premiere Pro",
+            "percentage":"90%"
+        },
+        {
+            "name":"Adobe XD",
+            "percentage":"90%"
+        },
+        {
+            "name":"3dmax",
+            "percentage":"80%"
+        }
+    ],
+    "languages":[
+        {
+            "name":"English",
+            "status":"Function Knowledge"
+        },
+        {
+            "name":"Urdu",
+            "status":"Native"
+        },
+        {
+            "name":"Punjabi",
+            "status":"Native"
+        }
+    ],
+    "testimonals":[
+        {
+            "name":"Jhonsmither",
+            "link":"",
+            "country":"Pakistan",
+            "review":"Asad khan was great! 5 Starts are less for his awesome fast delivery really wasn't sure what i wanted for my logo and he came up with a logo for me. I really love the logo and my twitch overlay design. i will definitely work with Him again and recommend him to others."
+        },
+        {
+            "name":"Digihunk",
+            "link":"",
+            "country":"India",
+            "review":"What a great experience it was...I must tell you this guy is so hardworking & committed...I have bought his gigs before also but this time I was in a hurry & for my bad, this guy was in hospital but guess what he still went for the extra miles to complete my project on time & exactly the way I wanted...He is very sharp & has some good graphic skills under his belt...Thanks man, I really appreciate your support...More projects coming your way..Cheers!"
+        },
+        {
+            "name":"Deekpizza",
+            "link":"",
+            "country":"United States",
+            "review":"Great overall experience, will use this designer again! Highly recommend, he will make sure you are happy."
+        },
+        {
+            "name":"Hirikoye",
+            "link":"",
+            "country":"Japan",
+            "review":"Awesome Work! I really love the photo he edited for me. Just as I wanted. He is a Professional. Highly recommend him. very fast delivery."
+        },
+        {
+            "name":"Mikelibro",
+            "link":"",
+            "country":"Romania",
+            "review":"Unbleavable!! I just asked him and he did it in no time. I really like his work and he is very kind with comunication. Highly recomend him for any photoshop word you need."
+        },
+        {
+            "name":"Sajjad789",
+            "link":"",
+            "country":"Pakistan",
+            "review":"My first time working with the guy and it was really great! Available 24/7 and always with the best professional attitude and pleasure to work with. highly recommend! :)"
+        },
+        {
+            "name":"Danish_shoaib11",
+            "link":"",
+            "country":"Pakistan",
+            "review":"I am very happy to work with Asad Khan, he is a very hardworking and talented person and also very quick. He edited my pictures in a very professional way. I will surely work with him again. :)"
+        },
+        {
+            "name":"Newdirection1",
+            "link":"",
+            "country":"United States",
+            "review":"Asad has an AMAZING talent, he's extremely knowledgeable and has lots of patients.... I'm beyond satisfied, happy. He was Finished with my project I had of schedule. It was me that didn’t have everything ready and keep him waiting he is such an amazing person I will continue to use him. Thank you so much Asad."
+        },
+        {
+            "name":"Urban_monk",
+            "link":"",
+            "country":"United States",
+            "review":"Superb communication and quick turn around."
+        },
+        {
+            "name":"Jonathancheu843",
+            "link":"",
+            "country":"Canada",
+            "review":"Chasadkhan delivered as promise and in an extremely fast manner. Very easy to communicate with and super friendly, will work with him again!"
+        },
+        {
+            "name":"Filmmakerdunbar",
+            "link":"",
+            "country":"United States",
+            "review":"Very professional service. Communicate was great."
+        },
+        {
+            "name":"Anaya_world",
+            "link":"",
+            "country":"India",
+            "review":"Awesome work by this designer, looking for more to go with him."
+        },
+        {
+            "name":"Fpd2wmopw",
+            "link":"",
+            "country":"United States",
+            "review":"Very good communicator. Did a nice job, and took direction well. Would definitely hire again."
+        },
+        {
+            "name":"bws1214",
+            "link":"",
+            "country":"United States",
+            "review":"So great to work with!! Will definitely hire again!! Top quality!!"
+        }
+    ]
+}
