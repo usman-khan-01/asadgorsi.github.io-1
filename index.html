@@ -639,18 +639,12 @@
 						</ul>
 					</div>
 					<div class="col-lg-5">
-						<p class="lead"><span class="text-color">Dreambuzz</span> © <span class="date"></span>
+						<p class="lead">
+							<span class="text-color">Dreambuzz</span> © <span class="date"></span>
 							<script>
 								let d = new Date();
-								let options = {
-									year: 'numeric',
-									// month: 'long',
-									// day: 'numeric',
-									// weekday: 'long'
-								};
-								document.querySelector('.date').innerHTML = d.toLocaleString('en-u-ca-gergory', options)
-								// d.toLocaleString('en-u-ca-islamic', options)
-								// d.toLocaleString('ar-u-ca-islamic', options)
+								let options = { year: 'numeric', /* month: 'long', day: 'numeric', weekday: 'long'*/ };
+								document.querySelector('.date').innerHTML = d.toLocaleString('en-u-ca-gergory', options) /* 'en-u-ca-islamic' 'ar-u-ca-islamic'*/
 							</script> All Right Reserved Ratsaan.
 						</p>
 						<a href="#top" class="backtop smoth-scroll"><i class="ti-angle-up"></i></a>
