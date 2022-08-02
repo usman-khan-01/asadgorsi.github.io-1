@@ -85,7 +85,6 @@ AOS.init({
             var width = $(this).data('percent');
             $(this).css({'transition': 'width 3s'});
             $(this).appear(function() {
-                console.log('hello');
                 $(this).css('width', width + '%');
                 $(this).find('.count').countTo({
                     from: 0,
