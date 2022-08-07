@@ -2,7 +2,7 @@
     "fullName": "Asad Khan",
     "firstName": "Asad",
     "lastName": "Khan",
-    "profileImage": "assets/images/profile.jpg",
+    "profileImageUrl": "assets/images/profile.jpg",
     "profession": "Graphic Designer",
     "tagline": "A Talented Freelancer Located",
     "about": "I've been working as an illustrator/graphics designer for the past 4 years. I have full command of Adobe Photoshop & Adobe Illustrator. I make lovely and as per your need illustrations, photo editing and other Photoshop work that help you and your entrepreneurial clients to attract the perfect audience. It will help to increase your business' conversion rate and to find an original voice to your words. I hope to get along with you.",
@@ -15,22 +15,18 @@
     "socialLinks": [
         {
             "platformName": "LinkedIn",
-            "link": "https://pk.linkedin.com/in/uk-gorsi"
+            "link": "https://pk.linkedin.com/in/asad-gorsi/"
         },
         {
-            "platformName": "github",
-            "link": "https://github.com/usman-khan-01"
+            "platformName": "Github",
+            "link": "https://github.com/asadgorsi"
         },
         {
-            "platformName": "hubstaff",
-            "link": "https://talent.hubstaff.com/profiles/usman-khan-5"
+            "platformName": "Fiverr",
+            "link": "https://fiverr.com/chasadkhan"
         },
         {
-            "platformName": "fiverr",
-            "link": "https://fiverr.com/usman_gorsi1"
-        },
-        {
-            "platformName": "upwork",
+            "platformName": "Upwork",
             "link": "https://www.upwork.com/freelancers/~01a12c9161e7456dcc"
         }
     ],

@@ -1,8 +1,28 @@
 var doc = new jsPDF('p', 'pt', 'legal');
 var img = new Image();
-getPlatformName = (data) => data[0].link;
+
+getLinkedInLink = (data) => data[0].link;
+getGithubLink = (data) => data[1].link;
+getFiverrLink = (data) => data[2].link;
+getUpworkLink = (data) => data[3].link;
+
+// getPlatformName = (data) => {
+//     switch (data) {
+//         case 'LinkedIn':
+//             return data[0].link;
+//         case 'Github':
+//             return data[1].link;
+//         case 'Fiverr':
+//             return data[2].link;
+//         case 'Upwork':
+//             return data[3].link;
+//         default:
+//             return null;
+//     }
+// }
 
 // data
+
 (async () => {
     const response = await fetch('https://graph.perspective-v.com/api/resume', {
         method: 'POST',
@@ -29,7 +49,9 @@ getPlatformName = (data) => data[0].link;
     $('.title-title').append(data.fullName);
     $('.logo, .lead').append(data.fullName);
     $('.head-trans').append(data.lastName + '.');
-    // document.querySelector('.profile-image').src = data.profileImageUrl;
+    document.querySelector('.fiverr-link').href = getFiverrLink(data.socialLinks);
+    document.querySelector('.linkedin-link').href = getLinkedInLink(data.socialLinks);
+    document.querySelector('.profile-image').src = data.profileImageUrl;
     document.querySelector('.profile-image').alt = data.fullName + "'s profile Image";
     $('.text-capitalize').append(data.fullName);
     $('.profession').append(data.profession);
@@ -37,7 +59,7 @@ getPlatformName = (data) => data[0].link;
     $('.myself').append(data.about);
 
     // expertise / skills
-    $.each(data.skills, function (i, skill) {
+    data.skills.forEach(x => {
         $('.skills').append(
             `<div class="col-lg-6 col-md-6">
                 <div class="skill-bar mb-4 mb-lg-0">
@@ -50,24 +72,26 @@ getPlatformName = (data) => data[0].link;
                         </div>
                     </div>
                 </div>
-            </div>`);
+            </div>
+        `);
     });
 
     // testimonials
-    $.each(data.testimonals, function (i, testimonial) {
+    data.testimonals.forEach(x => {
         $('.testimonial-item').append(`
-        <i class="ti-quote-left text-white-50"></i>
-        <div class="testimonial-content">
-                <p class="text-md mt-3 review">${testimonial.review}</p>
-                 <div class="media mt-5 align-items-center">
-                    <img src="${testimonial.imageUrl}" alt="${testimonial.name}'s Profile Image"
+            <i class="ti-quote-left text-white-50"></i>
+            <div class="testimonial-content">
+                <p class="text-md mt-3 review">${x.review}</p>
+                <div class="media mt-5 align-items-center">
+                    <img src="${x.imageUrl}" alt="${x.name}'s Image"
                         class="img-fluid rounded-circle align-self-center mr-4 client-imageUrl" />
                     <div class="media-body">
-                        <h3 class="mb-0 client-name">${testimonial.name}</h3>
-                        <span class="text-muted client-designation">${testimonial.country}</span>
+                        <h3 class="mb-0 client-name">${x.name}</h3>
+                        <span class="text-muted client-country">${x.country}</span>
                     </div>
                 </div>
-        </div>`);
+            </div>
+        `);
     });
 
     //#region pdf data
