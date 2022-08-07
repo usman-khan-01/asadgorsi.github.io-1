@@ -59,16 +59,16 @@ getUpworkLink = (data) => data[3].link;
     $('.myself').append(data.about);
 
     // expertise / skills
-    data.skills.forEach(x => {
+    $.each(data.skills, (i, x) => {
         $('.skills').append(
             `<div class="col-lg-6 col-md-6">
                 <div class="skill-bar mb-4 mb-lg-0">
                     <div class="mb-4 text-right">
-                        <h4 class="font-weight-normal skill-name">${skill.name}</h4>
+                        <h4 class="font-weight-normal skill-name">${x.name}</h4>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" data-percent="${skill.percentage}" style="width:${skill.percentage}%">
-                            <span class="percent-text"><span class="count">${skill.percentage}</span>%</span>
+                        <div class="progress-bar" data-percent="${x.percentage}" style="width:${x.percentage}%">
+                            <span class="percent-text"><span class="count">${x.percentage}</span>%</span>
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ getUpworkLink = (data) => data[3].link;
     });
 
     // testimonials
-    data.testimonals.forEach(x => {
+    $.each(data.testimonals, (i, x) => {
         $('.testimonial-item').append(`
             <i class="ti-quote-left text-white-50"></i>
             <div class="testimonial-content">
