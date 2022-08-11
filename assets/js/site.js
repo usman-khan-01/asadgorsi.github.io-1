@@ -84,8 +84,8 @@ getUpworkLink = (data) => data[3].link;
                 <div class="testimonial-content">
                     <p class="text-md mt-3 review">${x.review}</p>
                     <div class="media mt-5 align-items-center">
-                        <img src="${x.imageUrl}" alt="${x.name}'s Image"
-                            class="img-fluid rounded-circle align-self-center mr-4 client-imageUrl" />
+                        <a href="${x.link}"><img src="${x.imageUrl}" alt="${x.name}'s Image"
+                            class="img-fluid rounded-circle align-self-center mr-4 client-imageUrl"/></a>
                         <div class="media-body">
                             <h3 class="mb-0 client-name">${x.name}</h3>
                             <span class="text-muted client-country">${x.country}</span>
