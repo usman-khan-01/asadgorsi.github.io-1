@@ -78,16 +78,18 @@ getUpworkLink = (data) => data[3].link;
 
     // testimonials
     $.each(data.testimonals, (i, x) => {
-        $('.testimonial-item').append(`
-            <i class="ti-quote-left text-white-50"></i>
-            <div class="testimonial-content">
-                <p class="text-md mt-3 review">${x.review}</p>
-                <div class="media mt-5 align-items-center">
-                    <img src="${x.imageUrl}" alt="${x.name}'s Image"
-                        class="img-fluid rounded-circle align-self-center mr-4 client-imageUrl" />
-                    <div class="media-body">
-                        <h3 class="mb-0 client-name">${x.name}</h3>
-                        <span class="text-muted client-country">${x.country}</span>
+        $('.testimonial-slider').append(`
+            <div class="testimonial-item position-relative">
+                <i class="ti-quote-left text-white-50"></i>
+                <div class="testimonial-content">
+                    <p class="text-md mt-3 review">${x.review}</p>
+                    <div class="media mt-5 align-items-center">
+                        <img src="${x.imageUrl}" alt="${x.name}'s Image"
+                            class="img-fluid rounded-circle align-self-center mr-4 client-imageUrl" />
+                        <div class="media-body">
+                            <h3 class="mb-0 client-name">${x.name}</h3>
+                            <span class="text-muted client-country">${x.country}</span>
+                        </div>
                     </div>
                 </div>
             </div>
