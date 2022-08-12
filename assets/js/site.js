@@ -78,8 +78,8 @@ getUpworkLink = (data) => data[3].link;
 
     // testimonials
     $.each(data.testimonals, (i, x) => {
-        $('.owl-carousel').append(`
-            <div class="item">
+        $('.testimonials').append(`
+            <div class="testimonial-item">
                 <div class="testimonial-content">
                     <p class="text-md mt-3 review">${x.review}</p>
                     <a href="${x.link}" target="_blank" style="color:white">
@@ -97,7 +97,7 @@ getUpworkLink = (data) => data[3].link;
         `);
     });
     // owl carouse config
-    $(".owl-carousel").owlCarousel({
+    $(".testimonials").owlCarousel({
         items: 1,
         autoplay: true,
         autoplayTimeout: 3000,
@@ -112,6 +112,24 @@ getUpworkLink = (data) => data[3].link;
                 items: 1
             }
         }
+    });
+
+    // portfolio
+    $.each(data.portfolios, (i, x) => {
+        $('.post_gallery').append(`
+            <div class="item col-3">
+                <div class="portfolio-item position-relative">
+                    <img src="${x.imageUrl}" alt="${x.name}'s Image" class="img-fluid" />
+                    <div class="portoflio-item-overlay">
+                        <a href="${x.link}" target="_blank"><i class="ti-plus"></i></a>
+                    </div>
+                </div>
+                <div class="text mt-3">
+                    <h4 class="mb-1 text-capitalize">${x.name}</h4>
+                    <p class="text-uppercase letter-spacing text-sm">${x.framework}</p>
+                </div>
+            </div>
+        `);
     });
 
     //#region pdf data

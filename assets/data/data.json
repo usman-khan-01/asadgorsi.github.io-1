@@ -237,13 +237,13 @@
     "portfolios": [
         {
             "name": "Roofers FZC",
-            "imageUrl": "images/Rooferz FZC Banner.jpg",
+            "imageUrl": "assets/images/portfolio/3.jpg",
             "framework": "WordPress",
             "link": "https://roofersfzc.net/"
         },
         {
             "name": "Tamino Autograph",
-            "imageUrl": "images/Tamino Autograph.png",
+            "imageUrl": "assets/images/portfolio/3.jpg",
             "framework": "WordPress",
             "link": " https://www.taminoautographs.com/blogs/autograph-blog"
         }
