@@ -96,11 +96,12 @@ getUpworkLink = (data) => data[3].link;
             </div>
         `);
     });
-
     // owl carouse config
     $(".owl-carousel").owlCarousel({
-        autoPlay: 3000,
         items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         itemsDesktop: [1199, 1],
         itemsDesktopSmall: [979, 1],
         center: true,
@@ -112,6 +113,7 @@ getUpworkLink = (data) => data[3].link;
             }
         }
     });
+
     //#region pdf data
     $('.name_pdf').append(data.fullName);
     $('.address_pdf').append(data.basicInfo.address);
