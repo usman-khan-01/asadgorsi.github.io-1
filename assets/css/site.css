@@ -1,7 +1,6 @@
-a{
+a {
     cursor: pointer;
 }
-
 
 /*#region download button */
 .buttonHolder {
@@ -65,3 +64,31 @@ a{
     text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
 }
 /*#endregion download button */
+
+/*#region bootstrap owl carousel */
+.stretch-card > .card {
+    width: 100%;
+    min-width: 100%;
+}
+
+.card {
+    border: none;
+    background-color: #131f33;
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.owl-carousel .item img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+.owl-carousel .item {
+    margin: 3px;
+}
+/*#endregion bootstrap owl carousel */

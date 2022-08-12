@@ -78,24 +78,40 @@ getUpworkLink = (data) => data[3].link;
 
     // testimonials
     $.each(data.testimonals, (i, x) => {
-        $('.testimonial-slider').append(`
-            <div class="testimonial-item position-relative">
-                <i class="ti-quote-left text-white-50"></i>
+        $('.owl-carousel').append(`
+            <div class="item">
                 <div class="testimonial-content">
                     <p class="text-md mt-3 review">${x.review}</p>
-                    <div class="media mt-5 align-items-center">
-                        <a href="${x.link}"><img src="${x.imageUrl}" alt="${x.name}'s Image"
-                            class="img-fluid rounded-circle align-self-center mr-4 client-imageUrl"/></a>
-                        <div class="media-body">
-                            <h3 class="mb-0 client-name">${x.name}</h3>
-                            <span class="text-muted client-country">${x.country}</span>
+                    <a href="${x.link}" target="_blank" style="color:white">
+                        <div class="media mt-5 align-items-center">
+                            <img src="${x.imageUrl}" alt="${x.name}'s Image"
+                                class="img-fluid rounded-circle align-self-center mr-4 client-imageUrl" width="50" />
+                            <div class="media-body">
+                                <h3 class="mb-0 client-name">${x.name}</h3>
+                                <span class="text-muted client-country">${x.country}</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         `);
     });
 
+    // owl carouse config
+    $(".owl-carousel").owlCarousel({
+        autoPlay: 3000,
+        items: 1,
+        itemsDesktop: [1199, 1],
+        itemsDesktopSmall: [979, 1],
+        center: true,
+        // nav: true,
+        loop: true,
+        responsive: {
+            600: {
+                items: 1
+            }
+        }
+    });
     //#region pdf data
     $('.name_pdf').append(data.fullName);
     $('.address_pdf').append(data.basicInfo.address);
