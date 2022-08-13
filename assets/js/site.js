@@ -96,7 +96,7 @@ getUpworkLink = (data) => data[3].link;
             </div>
         `);
     });
-    // owl carouse config
+    // testimonials carousel config
     $(".testimonials").owlCarousel({
         items: 1,
         autoplay: true,
@@ -116,8 +116,8 @@ getUpworkLink = (data) => data[3].link;
 
     // portfolio
     $.each(data.portfolios, (i, x) => {
-        $('.post_gallery').append(`
-            <div class="item col-3">
+        $('.portfolios').append(`
+            <div class="item">
                 <div class="portfolio-item position-relative">
                     <img src="${x.imageUrl}" alt="${x.name}'s Image" class="img-fluid" />
                     <div class="portoflio-item-overlay">
@@ -130,6 +130,32 @@ getUpworkLink = (data) => data[3].link;
                 </div>
             </div>
         `);
+    });
+    // portfolio carousel config
+    $('.portfolios').owlCarousel({
+        items: 4,
+        margin: 1,
+        nav: true,
+        loop: true,
+        dots: false,
+        navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [979, 3],
+        center: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
     });
 
     //#region pdf data
