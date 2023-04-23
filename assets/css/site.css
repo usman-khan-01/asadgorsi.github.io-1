@@ -32,3 +32,6 @@
   transform: translateX(0);
 }
 
+.portfolio-data{
+  display: none;
+}

@@ -536,7 +536,8 @@
             <div class="st-single-progressbar">
               <div class="st-progressbar-heading">
                 <h3 class="st-progressbar-title">Figma</h3>
-                <div class="st-progressbar-percentage wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">100%
+                <div class="st-progressbar-percentage wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                  100%
                 </div>
               </div>
               <div class="st-progressbar" data-progress="90">
@@ -547,7 +548,8 @@
             <div class="st-single-progressbar">
               <div class="st-progressbar-heading">
                 <h3 class="st-progressbar-title">Sketch</h3>
-                <div class="st-progressbar-percentage wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">100%
+                <div class="st-progressbar-percentage wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                  100%
                 </div>
               </div>
               <div class="st-progressbar" data-progress="90">
@@ -698,9 +700,9 @@
       </div>
       <div class="st-height-b25 st-height-lg-b25"></div>
     </div>
-    <!-- <div class="container">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 portfolio-data">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/img/portfolio/portfolio1_lg.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -716,7 +718,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 portfolio-data">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/img/portfolio/portfolio2_lg.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -732,7 +734,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 portfolio-data">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/img/portfolio/portfolio3_lg.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -748,7 +750,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 portfolio-data">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/img/portfolio/portfolio4_lg.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -764,7 +766,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 portfolio-data">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/img/portfolio/portfolio5_lg.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -780,7 +782,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 portfolio-data">
           <div class="st-portfolio-single st-style1 st-lightgallery">
             <div class="st-portfolio-item">
               <a href="assets/img/portfolio/portfolio6_lg.jpg" class="st-portfolio st-zoom st-lightbox-item">
@@ -798,12 +800,12 @@
         </div>
         <div class="col-lg-12 text-center">
           <div class="st-portfolio-btn">
-            <a href="#" class="st-btn st-style1 st-color1">Load More</a>
+            <a href="#" class="st-btn st-style1 st-color1" id="load-more">Load More</a>
           </div>
         </div>
       </div>
-    </div> -->
-    <div class="container text-center row mx-auto my-auto justify-content-center">
+    </div>
+    <!-- <div class="container text-center row mx-auto my-auto justify-content-center">
 
       <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" role="listbox">
@@ -1005,7 +1007,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
       </div>
-    </div>
+    </div> -->
     <div class="st-height-b100 st-height-lg-b80"></div>
   </section>
   <!-- End Portfolio Seciton -->
@@ -1281,8 +1283,18 @@
       }
     })
 
+    $(function () {
+      $(".portfolio-data:hidden").slice(0, 3).show(); // select the first ten
+      $("#load-more").click(function (e) { // click event for load more
+        e.preventDefault();
+        $(".portfolio-data:hidden").slice(0, 3).show(); // select next 10 hidden divs and show them
+        // if ($(".portfolio-data:hidden").length == 0) { // check if any hidden divs still exist
+        //   alert("No more portfolios"); // alert if there are none left
+        // }
+      });
+    });
+
   </script>
 </body>
 
 </html>
-
