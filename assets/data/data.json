@@ -3,65 +3,103 @@
     "firstName": "Asad",
     "lastName": "Khan",
     "profession": "Graphics Designer",
+    "quote": "Satisfaction of Client Worth more than Money!",
     "tagline": "I Can Design Anything You Want",
     "profileImageUrl": "assets/img/slider/avatar.png",
     "about": "Hi There. I'm an expert graphic designer ready to bring your vision to life. From logos to websites, I offer professional and high-quality design services for all your needs. Trust me to elevate your brand and take it to the next level.",
     "basicInfo": {
         "mobile": "(+92)-333-8032733",
         "email": "asadkhann@hotmail.com",
-        "address": "Phase 1, DHA, Lahore",
+        "shortAddress": "Lahore, Pakistan",
+        "longAddress": "Phase 1, DHA, Lahore",
         "languages": "English, Urdu, Punjabi"
     },
     "socialLinks": [
         {
+            "icon": "icon-facebook-1",
             "platformName": "Fiverr",
             "link": "https://www.fiverr.com/chasadkhan"
         },
         {
+            "icon": "icon-linkedin-1",
             "platformName": "LinkedIn",
             "link": "https://www.linkedin.com/in/asadgorsi/"
         },
         {
+            "icon": "icon-instagram-1",
             "platformName": "Instagram",
             "link": "https://www.instagram.com/ak_gorsi/"
+        }
+    ],
+    "floatingLogos": [
+        {
+            "name": "illustrator",
+            "imageUrl": "assets/img/svg/skills/illustrator.svg"
+        },
+        {
+            "name": "photoshop",
+            "imageUrl": "assets/img/svg/skills/photoshop.svg"
+        },
+        {
+            "name": "blender",
+            "imageUrl": "assets/img/svg/skills/blender-01.svg"
+        }
+    ],
+    "process": [
+        {
+            "imageBackgroundUrl": "assets/img/brushes/process/dark/1.png",
+            "imageUrl": "assets/img/svg/process/target-2.svg",
+            "name": "Happy Clients",
+            "description": "When working with clients. Money is not my main objective. I strive to make all clients Happy. It's on fiverr or Local."
+        },
+        {
+            "imageBackgroundUrl": "assets/img/brushes/process/dark/2.png",
+            "imageUrl": "assets/img/svg/process/brush-2.svg",
+            "name": "Projects Completed",
+            "description": "I have completed more than 250+ Projects. Every single project have taught me something new."
+        },
+        {
+            "imageBackgroundUrl": "assets/img/brushes/process/dark/3.png",
+            "imageUrl": "assets/img/svg/process/energy-2.svg",
+            "name": "Years of Success",
+            "description": "It's been 6 Successful Years in Graphic Designing field."
         }
     ],
     "skills": [
         {
             "name": "Adobe Illustrator",
             "percentage": "100",
-            "data-color":"#f75023"
-            
+            "data-color": "#f75023"
         },
         {
             "name": "Adobe Photoshop",
             "percentage": "100",
-            "data-color":"#1cbe59"
+            "data-color": "#1cbe59"
         },
         {
             "name": "Adobe InDesign",
             "percentage": "100",
-            "data-color":"#8067f0"
+            "data-color": "#8067f0"
         },
         {
             "name": "Corel Draw",
             "percentage": "100",
-            "data-color":"#80D39B"
+            "data-color": "#80D39B"
         },
         {
             "name": "Adobe After Effect",
             "percentage": "90",
-            "data-color":"#FFAF87"
+            "data-color": "#FFAF87"
         },
         {
             "name": "Adobe Premiere Pro",
             "percentage": "90",
-            "data-color":"#CBEFB6"
+            "data-color": "#CBEFB6"
         },
         {
             "name": "Blender",
             "percentage": "90",
-            "data-color":"#E94F37"
+            "data-color": "#E94F37"
         }
     ],
     "portfolios": [
@@ -72,7 +110,7 @@
             "imageUrl": "assets/images/portfolios/learn-quran-live-academy/Learn-Quran-Live-1.jpg",
             "framework": "Asp.Net 6",
             "link": "https://learnquranliveacademy.com/"
-        },
+        }
     ],
     "experiences": [
         {
@@ -95,6 +133,54 @@
             "duration": "Mar 2019 - Jan 2020",
             "companyLogo": "images/placeholder-400x400.gif",
             "description": "In my time at Gorsi Shop, I have created their E-Commerce website in Wordpress as well as in Asp.Net Core MVC, named Gorsi Shop. Once in Asp.net Core and the second iteration in WordPress. \n Gorsi Shop is an e-commerce website that allows whole sellers to buy any IT related items such as keyboards, mouse, printers, projectors etc. And a complete admin panel is implemented for the admins of the site to manage products, orders and view reviews on different projects. \n\n Tools: \n1st Iteration: \n&#x2022; Front-end: Html, Css, jQuery \n&#x2022; Back-end: Asp.Net Core 2.0, Entity Framework Core \n\n 2nd Iteration: \n&#x2022; WordPress"
+        }
+    ],
+    "services": [
+        {
+            "imageUrl": "assets/img/svg/Icons/logo design-01.svg",
+            "imageBackgroundUrl": "assets/img/brushes/service/dark/1.png",
+            "name": "Logo Design",
+            "description": "Providing Different types of Logos. \n&#x2022 Minimalist Logo\n&#x2022 Abstract Logo\n&#x2022 Timeless Logo\n&#x2022 Mascot Logo"
+        },
+        {
+            "imageUrl": "assets/img/svg/Icons/ui-ux-design-01.svg",
+            "imageBackgroundUrl": "assets/img/brushes/service/dark/2.png",
+            "name": "UI/UX Designs",
+            "description": "We create UI/UX designs that make them smoothly scroll down the page without getting bored."
+        },
+        {
+            "imageUrl": "assets/img/svg/service/contact.svg",
+            "imageBackgroundUrl": "assets/img/brushes/service/dark/3.png",
+            "name": "Brand Identity",
+            "description": "Branding identity is the documentation of a brand's unique perception and covers all the aspects that make you stand out from other businesses."
+        },
+        {
+            "imageUrl": "assets/img/svg/Icons/web.svg",
+            "imageBackgroundUrl": "assets/img/brushes/service/dark/4.png",
+            "name": "Web Design",
+            "description": "Your printed marketing material can make a significant impact on your company's image. We provide quality print design services to make sure that your business is Standing out from others."
+        }
+    ],
+    "leftTestimonialsHoveringImages": [
+        {
+            "colorOrShape": "green",
+            "class": "one",
+            "imageUrl": "assets/img/testimonials/2.jpg"
+        },
+        {
+            "colorOrShape": "yellow",
+            "class": "two",
+            "imageUrl": "assets/img/testimonials/1.jpg"
+        },
+        {
+            "colorOrShape": "border",
+            "class": "three",
+            "imageUrl": "assets/img/testimonials/3.jpg"
+        },
+        {
+            "colorOrShape": "",
+            "class": "four",
+            "imageUrl": "assets/img/testimonials/4.jpg"
         }
     ],
     "testimonials": [
@@ -171,30 +257,21 @@
             "review": "So great to work with!! Will definitely hire again!! Top quality!!"
         }
     ],
-    "services": [
+    "rightTestimonialsHoveringImages": [
         {
-            "imageUrl":"assets/img/svg/Icons/logo design-01.svg",
-            "imageBackgroundUrl":"assets/img/brushes/service/dark/1.png",
-            "name":"Logo Design",
-            "description":"Providing Different types of Logos. \n&#x2022 Minimalist Logo\n&#x2022 Abstract Logo\n&#x2022 Timeless Logo\n&#x2022 Mascot Logo"
+            "colorOrShape": "yellow",
+            "class": "one",
+            "imageUrl": "assets/img/testimonials/5.jpg"
         },
         {
-            "imageUrl":"assets/img/svg/Icons/ui-ux-design-01.svg",
-            "imageBackgroundUrl":"assets/img/brushes/service/dark/2.png",
-            "name":"UI/UX Designs",
-            "description":"We create UI/UX designs that make them smoothly scroll down the page without getting bored."
+            "colorOrShape": "purple",
+            "class": "two",
+            "imageUrl": "assets/img/testimonials/6.jpg"
         },
         {
-            "imageUrl":"assets/img/svg/service/contact.svg",
-            "imageBackgroundUrl":"assets/img/brushes/service/dark/3.png",
-            "name":"Brand Identity",
-            "description":"Branding identity is the documentation of a brand's unique perception and covers all the aspects that make you stand out from other businesses."
-        },
-        {
-            "imageUrl":"assets/img/svg/Icons/web.svg",
-            "imageBackgroundUrl":"assets/img/brushes/service/dark/4.png",
-            "name":"Web Design",
-            "description":"Your printed marketing material can make a significant impact on your company's image. We provide quality print design services to make sure that your business is Standing out from others."
+            "colorOrShape": "border",
+            "class": "three",
+            "imageUrl": "assets/img/testimonials/7.jpg"
         }
     ]
 }
