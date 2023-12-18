@@ -94,27 +94,27 @@
         `);
     });
 
-    $.each(data.testimonials, (i, t) => {
-      $(".owl-carousel").append(`
-            <li>
-                <div class="icon">
-                    <img class="svg" src="./assets/img/svg/testimonials/quote.svg" alt="" />
-                </div>
-                <div class="text">
-                    <p>${t.review}</p>
-                </div>
-                <div class="short">
-                    <div class="image">
-                        <div class="main" data-img-url="${t.imageUrl}"></div>
-                    </div>
-                    <div class="detail">
-                        <h3>${t.name}</h3>
-                        <span>${t.from}</span>
-                    </div>
-                </div>
-            </li>
-        `);
-    });
+    // $.each(data.testimonials, (i, t) => {
+    //   $(".owl-carousel").append(`
+    //         <li>
+    //             <div class="icon">
+    //                 <img class="svg" src="./assets/img/svg/testimonials/quote.svg" alt="" />
+    //             </div>
+    //             <div class="text">
+    //                 <p>${t.review}</p>
+    //             </div>
+    //             <div class="short">
+    //                 <div class="image">
+    //                     <div class="main" data-img-url="${t.imageUrl}"></div>
+    //                 </div>
+    //                 <div class="detail">
+    //                     <h3>${t.name}</h3>
+    //                     <span>${t.from}</span>
+    //                 </div>
+    //             </div>
+    //         </li>
+    //     `);
+    // });
 
     $.each(data.rightTestimonialsHoveringImages, (i, rt) => {
       $(".right_details").append(`
