@@ -86,6 +86,43 @@
     });
     //#endregion Services
 
+    //#region Portfolios
+    $.each(data.portfolioHeadings, (i, ph) => {
+        $(`.portfolio_filter ul`).append(`
+            <li><a href="#" class="${ph.class}" data-filter="${ph.dataFilter}">${ph.name}</a></li>
+        `);
+    });
+
+    $.each(data.portfolios, (i, p) => {
+        $(`.gallery_zoom`).append(`
+            <li class="popup ${p.class} grid-item">
+                <div class="inner">
+                    <div class="entry dizme_tm_portfolio_animation_wrap">
+                        <a class="zoom" href="${p.href}">
+                            <img src="${p.imageUrl}"/>
+                            <div class="main" data-img-url="${p.dataImageUrl}"></div>
+                        </a>
+                    </div>
+                    <div class="mobile_title">
+                        <h3>Dexters Lab Wash</h3>
+                    </div>
+                </div>
+            </li>
+        `);
+    });
+    //#endregion Portfolios
+
+    //#region Skills
+    $.each(data.skills, (i, s) => {
+      $(`.dodo_progress`).append(`
+            <div class="progress_inner" data-value="${s.percentage}" data-color="${s.dataColor}">
+                <span><span class="label">${s.name}</span><span class="number">${s.percentage}%</span></span>
+                <div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+            </div>
+        `);
+    });
+    //#endregion Skills
+
     //#region Testimonials
     $.each(data.leftTestimonialsHoveringImages, (i, lt) => {
       $(".left_details").append(`

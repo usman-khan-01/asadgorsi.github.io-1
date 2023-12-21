@@ -69,47 +69,147 @@
         {
             "name": "Adobe Illustrator",
             "percentage": "100",
-            "data-color": "#f75023"
+            "dataColor": "#f75023"
         },
         {
             "name": "Adobe Photoshop",
             "percentage": "100",
-            "data-color": "#1cbe59"
+            "dataColor": "#1cbe59"
         },
         {
             "name": "Adobe InDesign",
             "percentage": "100",
-            "data-color": "#8067f0"
+            "dataColor": "#8067f0"
         },
         {
             "name": "Corel Draw",
             "percentage": "100",
-            "data-color": "#80D39B"
+            "dataColor": "#80D39B"
         },
         {
             "name": "Adobe After Effect",
             "percentage": "90",
-            "data-color": "#FFAF87"
+            "dataColor": "#FFAF87"
         },
         {
             "name": "Adobe Premiere Pro",
             "percentage": "90",
-            "data-color": "#CBEFB6"
+            "dataColor": "#CBEFB6"
         },
         {
             "name": "Blender",
             "percentage": "90",
-            "data-color": "#E94F37"
+            "dataColor": "#E94F37"
+        }
+    ],
+    "portfolioHeadings": [
+        {
+            "class": "current",
+            "dataFilter": "*",
+            "name": "All"
+        },
+        {
+            "class": "",
+            "dataFilter": "Logos",
+            "name": "Logos"
+        },
+        {
+            "class": "",
+            "dataFilter": "Posts",
+            "name": "Posts"
         }
     ],
     "portfolios": [
         {
-            "hId": "aspnet",
-            "name": "Learn Quran Live Academy",
-            "description": "",
-            "imageUrl": "assets/images/portfolios/learn-quran-live-academy/Learn-Quran-Live-1.jpg",
-            "framework": "Asp.Net 6",
-            "link": "https://learnquranliveacademy.com/"
+            "class": "Logos",
+            "name": "Dexters Lab Wash",
+            "dataImageUrl": "assets/img/portfolio/dexter-lab.jpg",
+            "href": "assets/img/portfolio/dexter-lab-logo-popup.jpg",
+            "imageUrl": "assets/img/portfolio/dexter-lab-logo-popup.jpg"
+        },
+        {
+            "class": "Logos",
+            "name": "Amberlab Coffee & Conut",
+            "dataImageUrl": "assets/img/portfolio/amberlab-logo.jpg",
+            "href": "assets/img/portfolio/amberlab-logo-popup.jpg",
+            "imageUrl": "assets/img/portfolio/amberlab-logo-popup.jpg"
+        },
+        {
+            "class": "Logos",
+            "name": "Dexters Lab Wash",
+            "dataImageUrl": "assets/img/portfolio/annalise-logo.jpg",
+            "href": "assets/img/portfolio/annalise-logo-popup.jpg",
+            "imageUrl": "assets/img/portfolio/annalise-logo-popup.jpg"
+        },
+        {
+            "class": "Logos",
+            "name": "Kendo Club",
+            "dataImageUrl": "assets/img/portfolio/kendo-logo.jpg",
+            "href": "assets/img/portfolio/kendo-logo-popup.jpg",
+            "imageUrl": "assets/img/portfolio/kendo-logo-popup.jpg"
+        },
+        {
+            "class": "Logos",
+            "name": "Dexters Lab Wash",
+            "dataImageUrl": "assets/img/portfolio/maddskillzstudio-logo-popup.jpg",
+            "href": "assets/img/portfolio/maddskillzstudio-logo-popup.jpg",
+            "imageUrl": "assets/img/portfolio/maddskillzstudio-logo-popup.jpg"
+        },
+        {
+            "class": "Logos",
+            "name": "Blue Lemon",
+            "dataImageUrl": "assets/img/portfolio/marisa-logo.jpg",
+            "href": "assets/img/portfolio/marisa-logo-popup.jpg",
+            "imageUrl": "assets/img/portfolio/marisa-logo-popup.jpg"
+        },
+        {
+            "class": "Posts",
+            "name": "MB Online HUB",
+            "dataImageUrl": "assets/img/portfolio/Posts/post-1.jpg",
+            "href": "assets/img/portfolio/Posts/post-1-popup.jpg",
+            "imageUrl": "assets/img/portfolio/Posts/post-1-popup.jpg"
+        },
+        {
+            "class": "Posts",
+            "name": "Homm Life",
+            "dataImageUrl": "assets/img/portfolio/Posts/post-2.jpg",
+            "href": "assets/img/portfolio/Posts/post-2-popup.jpg",
+            "imageUrl": "assets/img/portfolio/Posts/post-2-popup.jpg"
+        },
+        {
+            "class": "Posts",
+            "name": "AROMA",
+            "dataImageUrl": "assets/img/portfolio/Posts/post-4.jpg",
+            "href": "assets/img/portfolio/Posts/post-3-popup.jpg",
+            "imageUrl": "assets/img/portfolio/Posts/post-4-popup.jpg"
+        },
+        {
+            "class": "Posts",
+            "name": "GroundXero",
+            "dataImageUrl": "assets/img/portfolio/Posts/post-4.jpg",
+            "href": "assets/img/portfolio/Posts/post-4-popup.jpg",
+            "imageUrl": "assets/img/portfolio/Posts/post-4-popup.jpg"
+        },
+        {
+            "class": "Posts",
+            "name": "Cosmetic Love",
+            "dataImageUrl": "assets/img/portfolio/Posts/post-5.jpg",
+            "href": "assets/img/portfolio/Posts/post-5-popup.jpg",
+            "imageUrl": "assets/img/portfolio/Posts/post-5-popup.jpg"
+        },
+        {
+            "class": "Posts",
+            "name": "Workout Club",
+            "dataImageUrl": "assets/img/portfolio/Posts/post-6.jpg",
+            "href": "assets/img/portfolio/Posts/post-6-popup.jpg",
+            "imageUrl": "assets/img/portfolio/Posts/post-6-popup.jpg"
+        },
+        {
+            "class": "Posts",
+            "name": "Workout Club",
+            "dataImageUrl": "assets/img/portfolio/Posts/post-7.jpg",
+            "href": "assets/img/portfolio/Posts/post-7-popup.jpg",
+            "imageUrl": "assets/img/portfolio/Posts/post-7-popup.jpg"
         }
     ],
     "experiences": [
