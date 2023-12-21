@@ -61,40 +61,15 @@
     });
     //#endregion Process
 
-    //#region Services
-    $.each(data.services, (i, s) => {
-      $(`.service_list ul`).append(`
-            <li class="wow fadeInLeft" data-wow-duration="1s">
-                <div class="list_inner tilt-effect">
-                    <span class="icon">
-                        <img class="back" src="${
-                          s.imageBackgroundUrl
-                        }" alt="" />
-                        <img class="svg" src="${s.imageUrl}" alt="" />
-                    </span>
-                <div class="title">
-                    <h3>${s.name}</h3>
-                    <!-- <span class="price">Starts from <span class="orangeText">$99</span></span> -->
-                </div>
-                <div class="text"><p>${s.description.replace(
-                  /\n/g,
-                  "<br>"
-                )}}</p></div>
-                </div>
-            </li>
-        `);
-    });
-    //#endregion Services
-
     //#region Portfolios
     $.each(data.portfolioHeadings, (i, ph) => {
-        $(`.portfolio_filter ul`).append(`
+      $(`.portfolio_filter ul`).append(`
             <li><a href="#" class="${ph.class}" data-filter="${ph.dataFilter}">${ph.name}</a></li>
         `);
     });
 
     $.each(data.portfolios, (i, p) => {
-        $(`.gallery_zoom`).append(`
+      $(`.gallery_zoom`).append(`
             <li class="popup ${p.class} grid-item">
                 <div class="inner">
                     <div class="entry dizme_tm_portfolio_animation_wrap">
@@ -123,6 +98,31 @@
     });
     //#endregion Skills
 
+    //#region Services
+    $.each(data.services, (i, s) => {
+      $(`.service_list ul`).append(`
+          <li class="wow fadeInLeft" data-wow-duration="1s">
+              <div class="list_inner tilt-effect">
+                  <span class="icon">
+                      <img class="back" src="${
+                        s.imageBackgroundUrl
+                      }" alt="" />
+                      <img class="svg" src="${s.imageUrl}" alt="" />
+                  </span>
+              <div class="title">
+                  <h3>${s.name}</h3>
+                  <!-- <span class="price">Starts from <span class="orangeText">$99</span></span> -->
+              </div>
+              <div class="text"><p>${s.description.replace(
+                /\n/g,
+                "<br>"
+              )}</p></div>
+              </div>
+          </li>
+        `);
+    });
+    //#endregion Services
+
     //#region Testimonials
     $.each(data.leftTestimonialsHoveringImages, (i, lt) => {
       $(".left_details").append(`
@@ -131,27 +131,27 @@
         `);
     });
 
-    // $.each(data.testimonials, (i, t) => {
-    //   $(".owl-carousel").append(`
-    //         <li>
-    //             <div class="icon">
-    //                 <img class="svg" src="./assets/img/svg/testimonials/quote.svg" alt="" />
-    //             </div>
-    //             <div class="text">
-    //                 <p>${t.review}</p>
-    //             </div>
-    //             <div class="short">
-    //                 <div class="image">
-    //                     <div class="main" data-img-url="${t.imageUrl}"></div>
-    //                 </div>
-    //                 <div class="detail">
-    //                     <h3>${t.name}</h3>
-    //                     <span>${t.from}</span>
-    //                 </div>
-    //             </div>
-    //         </li>
-    //     `);
-    // });
+    $.each(data.testimonials, (i, t) => {
+      $(".testimonials").append(`
+            <li>
+                <div class="icon">
+                    <img class="svg" src="./assets/img/svg/testimonials/quote.svg" alt="" />
+                </div>
+                <div class="text">
+                    <p>${t.review}</p>
+                </div>
+                <div class="short">
+                    <div class="image">
+                        <div class="main" data-img-url="${t.imageUrl}"></div>
+                    </div>
+                    <div class="detail">
+                        <h3>${t.name}</h3>
+                        <span>${t.from}</span>
+                    </div>
+                </div>
+            </li>
+        `);
+    });
 
     $.each(data.rightTestimonialsHoveringImages, (i, rt) => {
       $(".right_details").append(`

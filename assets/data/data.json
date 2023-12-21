@@ -249,13 +249,13 @@
             "description": "We create UI/UX designs that make them smoothly scroll down the page without getting bored."
         },
         {
-            "imageUrl": "assets/img/svg/service/contact.svg",
+            "imageUrl": "assets/img/svg/Icons/brand identity-01.svg",
             "imageBackgroundUrl": "assets/img/brushes/service/dark/3.png",
             "name": "Brand Identity",
             "description": "Branding identity is the documentation of a brand's unique perception and covers all the aspects that make you stand out from other businesses."
         },
         {
-            "imageUrl": "assets/img/svg/Icons/web.svg",
+            "imageUrl": "assets/img/svg/service/contact.svg",
             "imageBackgroundUrl": "assets/img/brushes/service/dark/4.png",
             "name": "Web Design",
             "description": "Your printed marketing material can make a significant impact on your company's image. We provide quality print design services to make sure that your business is Standing out from others."
@@ -275,7 +275,7 @@
         {
             "colorOrShape": "border",
             "class": "three",
-            "imageUrl": "assets/img/testimonials/3.jpg"
+            "imageUrl": "assets/img/testimonials/12.jpg"
         },
         {
             "colorOrShape": "",
@@ -295,12 +295,6 @@
             "imageUrl": "assets/img/testimonials/2.jpg",
             "from": "Fiverr",
             "review": "Wow! Wow! Wow! I am so glad that I found casadkhan. What a top-notch designer and person to work with. He was fast, responsive, and patient with me as we went through several revisions. I could trust him to read my artistic direction and make something beautiful. The original project was 4 pages and the final project ended up to be 7 pages. But the final product was amazing!"
-        },
-        {
-            "name": "keangelomaybury",
-            "imageUrl": "assets/img/testimonials/3.jpg",
-            "from": "Fiverr",
-            "review": "Loved the template design, documentation, customizability and the customer support from Marketify team! I am a noob in programming with very little knowledge about coding but the Marketify team helped me to launch my resume website successfully. Much recommended!"
         },
         {
             "name": "emchatman92",
@@ -325,6 +319,12 @@
             "imageUrl": "assets/img/testimonials/7.jpg",
             "from": "Fiverr",
             "review": "Fast delivery, pristine work. I enjoyed working with this dude. I highly recommend if your looking for fast turnaround"
+        },
+        {
+            "name": "keangelomaybury",
+            "imageUrl": "assets/img/testimonials/3.jpg",
+            "from": "Fiverr",
+            "review": "Loved the template design, documentation, customizability and the customer support from Marketify team! I am a noob in programming with very little knowledge about coding but the Marketify team helped me to launch my resume website successfully. Much recommended!"
         },
         {
             "name": "scaryspikes",
